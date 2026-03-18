@@ -9,12 +9,10 @@ export default function Home() {
       <GravityStarsBackground className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl" />
 
       <Header />
-      <div className="mt-[175px] h-[calc(100vh-64px)]">
+      <div className="sm:mt-[175px] lg:h-[calc(100vh-64px)]">
         <Landing />
       </div>
-      <div className="h-screen">
-        <TechnicalSkills />
-      </div>
+      <TechnicalSkills />
     </div>
   )
 }

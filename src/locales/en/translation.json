@@ -18,5 +18,16 @@
   "change languat": "changeLanguage",
   "changeLanguage": "change Language to",
   "Comprehensive expertise across modern front-end development": "Comprehensive expertise across modern front-end development stack with a focus on building responsive, scalable, and high-performance web applications.",
-  "Technical Skills": "Technical Skills"
+  "Technical Skills": "Technical Skills",
+  "Core Languages": "Core Languages",
+  "Frontend Technology Stack": "Frontend Technology  Stack",
+  "Styling  UI": "Styling & UI",
+  "Development Tools": "Development Tools",
+  "Deployment": "Deployment",
+  "Internationalization": "Internationalization (i18n)",
+  "API Development  Testing": "API Development & Testing",
+  "API DevelopmentTesting": "API Development & Testing",
+  "React Ecosystem": "React Ecosystem",
+  "Development  Deployment": "Development & Deployment",
+  "i18n  Utilities": "i18n & Utilities"
 }

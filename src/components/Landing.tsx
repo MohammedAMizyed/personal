@@ -6,23 +6,24 @@ import { FaFacebookF } from "react-icons/fa"
 import { MdOutgoingMail } from "react-icons/md"
 import { VscDebugBreakpointLog } from "react-icons/vsc"
 import { useTranslation } from "react-i18next"
+import { cn } from "@/lib/utils"
 
 export default function Landing() {
   const { t } = useTranslation()
 
   return (
     <div className="container lg:px-33! ">
-      <div className="flex justify-center  gap-10 items-center ">
+      <div className="flex justify-center flex-col-reverse  md:flex-row  sm:gap-10 items-center ">
         <div className="flex-1/2">
-          <h1 className="text-[54px] font-semibold ">
+          <h1 className="sm:text-start text-center text-[30px] sm:mt-0 mt-5 sm:text-[54px] font-semibold ">
             {t("Hello I")}
 
             <span className="block animate-pulse">Mohammed Developer</span>
           </h1>
-          <h2 className="text-[#717182] text-3xl my-5">
+          <h2 className="text-[#717182] text-[22px] sm:text-start text-center sm:text-3xl my-3">
             {t("Software Engineer crafting modern digital experiences")}
           </h2>
-          <h2 className="text-[#717182] text-2xl my-5 max-w-[550px]">
+          <h2 className="text-[#717182] text-xl sm:text-start  text-center sm:text-2xl my-5 max-w-[550px]">
             {t("")}
             {t("Specializing in modern")}{" "}
             <span className="font-semibold text-black">
@@ -30,16 +31,19 @@ export default function Landing() {
             </span>{" "}
             {t("and creating responsive user interfaces")}
           </h2>
-          <div className="flex gap-5 justify-start items-center my-5">
-            <Button className="cursor-pointer p-5  hover:bg-[#000000cb]">
+          <div className="flex gap-5 justify-center sm:justify-start items-center my-5">
+            <Button className="cursor-pointer p-5 sm:w-fit w-[50%]   hover:bg-[#000000cb]">
               {t("Contact Me")}
             </Button>
 
-            <Button className="cursor-pointer p-5" variant={"outline"}>
+            <Button
+              className="cursor-pointer sm:w-fit w-[50%] p-5"
+              variant={"outline"}
+            >
               {t("View My Work")}
             </Button>
           </div>
-          <div className="flex items-center gap-5 mt-5">
+          <div className="flex items-center sm:justify-start justify-center gap-5 mt-5">
             <div className="rounded-[50%] cursor-pointer border-[1px] border-[#717182] p-3">
               <a
                 href="https://www.facebook.com/MohammedAMizyed1 "
@@ -67,7 +71,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="flex-1/2 justify-center flex ">
-          <div className=" select-none w-[450px] h-[450px]  border-b-6   border-white relative rounded-[50%] shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
+          <div className=" select-none w-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px]  border-b-6   border-white relative -top-2 sm:top-0 rounded-[50%] shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
             <img
               className=" rounded-[50%] shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden "
               src={background}
@@ -80,7 +84,9 @@ export default function Landing() {
             />
             <Button
               variant={"outline"}
-              className="absolute p-5 -bottom-5 cursor-pointer  right-9"
+              className={cn(
+                "absolute p-5 -bottom-5 cursor-pointer right-[50%]  sm:-translate-x-[10px] sm:right-9 -translate-x-[-50%]",
+              )}
             >
               <VscDebugBreakpointLog className="animate-pulse  text-green-500 " />
               {t("Available for hire")}{" "}

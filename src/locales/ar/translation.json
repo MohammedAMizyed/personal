@@ -17,5 +17,16 @@
   "Available for Work": "متاح للعمل",
   "changeLanguage": "تغيير اللغة إلى",
   "Comprehensive expertise across modern front-end development": "خبرة شاملة في تقنيات تطوير الواجهات الأمامية الحديثة مع التركيز على بناء تطبيقات ويب متجاوبة، قابلة للتوسع، وعالية الأداء.",
-  "Technical Skills": "المهارات الفنية"
+  "Technical Skills": "المهارات الفنية",
+  "Core Languages": "اللغات الأساسية",
+  "Frontend Technology Stack": "مجموعة تقنيات الواجهة الأمامية",
+  "Styling  UI": "التصميم",
+  "Development Tools": "أدوات التطوير",
+  "Deployment": "النشر",
+  "Internationalization": "التدويل (i18n)",
+  "API Development  Testing": "تطوير واجهة برمجة التطبيقات",
+  "API DevelopmentTesting": "تطوير واجهة برمجة التطبيقات",
+  "React Ecosystem": "رد فعل النظام البيئي",
+  "Development  Deployment": "تطوير",
+  "i18n  Utilities": "i18n"
 }
