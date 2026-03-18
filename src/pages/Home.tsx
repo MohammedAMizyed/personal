@@ -2,6 +2,9 @@ import { GravityStarsBackground } from "@/components/animate-ui/components/backg
 import Header from "../components/Header"
 import Landing from "../components/Landing"
 import TechnicalSkills from "@/components/TechnicalSkills"
+import ProfessionalExperience from "@/components/ProfessionalExperience"
+import FeaturedProjects from "@/components/FeaturedProjects"
+import Contact from "@/components/contact"
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
         <Landing />
       </div>
       <TechnicalSkills />
+      <ProfessionalExperience />
+      <FeaturedProjects />
+      <Contact />
     </div>
   )
 }

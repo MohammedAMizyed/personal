@@ -55,7 +55,7 @@ export default function TechnicalSkills() {
     },
 
     {
-      title: t("React Ecosystem"),
+      title: t("React Tools  Libraries"),
       skills: [
         { name: "React.js", icon: <FaReact className="text-blue-400" /> },
         {

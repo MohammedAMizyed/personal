@@ -29,5 +29,37 @@
   "API DevelopmentTesting": "API Development & Testing",
   "React Ecosystem": "React Ecosystem",
   "Development  Deployment": "Development & Deployment",
-  "i18n  Utilities": "i18n & Utilities"
+  "i18n  Utilities": "i18n & Utilities",
+  "React Tools  Libraries": "React Tools & Libraries",
+  "Professional Experience": "Professional Experience\n",
+  "Front-End Developer passionate about building scalable and modern web applications using React and modern JavaScript tools": "Front-End Developer passionate about building scalable and modern web applications using React and modern JavaScript tools.",
+  "Front-End Developer focused on building modern web applications using React and real-world projects": "Front-End Developer focused on building modern web applications using React and real-world projects\n",
+  "Engineered a scalable e-commerce application with dynamic filtering": "Engineered a scalable e-commerce application with dynamic filtering (category & size), secure authentication, cart and favorites management, and multi-language support. Designed dedicated product pages with optimized state handling and performance.",
+  "Personal Project": "Personal Project",
+  "Zain Oasis E-Commerce Project": "Zain Oasis (E-Commerce Project)",
+  "Built a dynamic food application with API integration": "Built a dynamic food application with API integration, category-based filtering, and dedicated meal pages. Implemented cart and favorites features with a responsive and user-friendly interface.",
+  "Developed a movie application with real-time search": "Developed a movie application with real-time search, API integration, and user interaction features including favorites, wishlist, and watched list, with a focus on clean UI and performance.",
+  "Engineered a scalable e-commerce application with dynamic filterin": "Engineered a scalable e-commerce application with dynamic filtering (category & size), secure authentication, cart and favorites management, and multi-language support. Designed dedicated product pages with optimized state handling and performance.",
+  "Let Work Together": "Let's Work Together",
+  "A selection of projects that demonstrate my expertise in front-en": " A selection of projects that demonstrate my expertise in front-end\n          development, API integration, and building interactive web\n          applications.",
+  "Full-featured e-commerce platform with category ": "Full-featured e-commerce platform with category & size-based filtering, secure authentication, cart and favorites management, and multi-language support. Each product has a dedicated details page with clean UI and optimized state handling.",
+  "Dynamic food app with category-based filtering and dedicated meal pages": {
+    " Implemented favorites and cart functionality along with interactive UI components like carousels": {
+      " Focused on responsive design and smooth U": "Dynamic food app with category-based filtering and dedicated meal pages. Implemented favorites and cart functionality along with interactive UI components like carousels. Focused on responsive design and smooth UX.\""
+    }
+  },
+  "Interactive movie browsing application wit": "Interactive movie browsing application with real-time search, API integration, and user personalization features such as wishlist, favorites, and watched lists. Optimized for performance and clean UI design.",
+  "Featured Projects": "Featured Projects",
+  "Featured Projects descrabtion": "  A selection of projects that demonstrate my expertise in front-end\n          development, API integration, and building interactive web\n          applications.",
+  "Lets build beautiful fast and intuitive web interfaces together powered by modern front-end technologies": "Let’s build beautiful, fast, and intuitive web interfaces together, powered by modern front-end technologies.",
+  "Location": "Location",
+  "Available for Remote Work": "Available for Remote Work",
+  "Phone": "Phone",
+  "Email": "Email",
+  "Send a Message": "Send a Message",
+  "send message": "Send Message",
+  "your name": "Your Name",
+  "Your email": "Your Email",
+  "subject": "Subject",
+  "your message": "Your Message"
 }

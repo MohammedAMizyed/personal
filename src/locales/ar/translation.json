@@ -28,5 +28,37 @@
   "API DevelopmentTesting": "تطوير واجهة برمجة التطبيقات",
   "React Ecosystem": "رد فعل النظام البيئي",
   "Development  Deployment": "تطوير",
-  "i18n  Utilities": "i18n"
+  "i18n  Utilities": "i18n",
+  "React Tools  Libraries": "تقنيات وأدوات React",
+  "Professional Experience": "الخبرة المهنية",
+  "Front-End Developer passionate about building scalable and modern web applications using React and modern JavaScript tools": "مطور الواجهة الأمامية شغوف ببناء تطبيقات ويب حديثة وقابلة للتطوير باستخدام React وأدوات JavaScript الحديثة.",
+  "Front-End Developer focused on building modern web applications using React and real-world projects": "ركز مطور Front-End على بناء تطبيقات الويب الحديثة باستخدام React ومشاريع العالم الحقيقي",
+  "Engineered a scalable e-commerce application with dynamic filtering": "تم تصميم تطبيق تجارة إلكترونية قابل للتطوير مع التصفية الديناميكية (الفئة",
+  "Personal Project": "مشروع شخصي",
+  "Zain Oasis E-Commerce Project": "واحة زين (E-Commerce Project)",
+  "Built a dynamic food application with API integration": "أنشئ تطبيقًا ديناميكيًا للطعام مع تكامل واجهة برمجة التطبيقات (API)، والتصفية على أساس الفئة، وصفحات الوجبات المخصصة. \nتم تنفيذ ميزات عربة التسوق والمفضلات من خلال واجهة سريعة الاستجابة وسهلة الاستخدام.",
+  "Developed a movie application with real-time search": "تم تطوير تطبيق أفلام مع البحث في الوقت الفعلي وتكامل واجهة برمجة التطبيقات (API) وميزات تفاعل المستخدم بما في ذلك المفضلة وقائمة الرغبات وقائمة المشاهدة، مع التركيز على واجهة المستخدم والأداء النظيفين.",
+  "Engineered a scalable e-commerce application with dynamic filterin": "صممتُ تطبيقًا للتجارة الإلكترونية قابلًا للتوسع، يتميز بفلترة ديناميكية (حسب الفئة والحجم)، ومصادقة آمنة، وإدارة سلة التسوق والمفضلة، ودعم لغات متعددة. كما صممتُ صفحات منتجات مخصصة مع تحسين معالجة الحالة والأداء.",
+  "Let Work Together": "دعونا نعمل معا",
+  "A selection of projects that demonstrate my expertise in front-en": "مجموعة مختارة من المشاريع التي تثبت خبرتي في الواجهة الأمامية\n          \nالتطوير وتكامل واجهة برمجة التطبيقات (API) وبناء الويب التفاعلي\n          \nالتطبيقات.",
+  "Full-featured e-commerce platform with category ": "منصة تجارة إلكترونية متكاملة الميزات، مزودة بخاصية التصفية حسب الفئة والحجم، ونظام مصادقة آمن، وإدارة سلة التسوق والمفضلة، ودعم لغات متعددة. لكل منتج صفحة تفاصيل خاصة به بواجهة مستخدم أنيقة ومعالجة مُحسّنة للحالة.",
+  "Dynamic food app with category-based filtering and dedicated meal pages": {
+    " Implemented favorites and cart functionality along with interactive UI components like carousels": {
+      " Focused on responsive design and smooth U": "تطبيق طعام ديناميكي مع تصفية حسب الفئة وصفحات مخصصة للوجبات. \nتم تنفيذ وظيفة المفضلة وعربة التسوق جنبًا إلى جنب مع مكونات واجهة المستخدم التفاعلية مثل الرف الدائري. \nركز على التصميم سريع الاستجابة وتجربة المستخدم السلسة.\""
+    }
+  },
+  "Interactive movie browsing application wit": "تطبيق تفاعلي لتصفح الأفلام مع البحث في الوقت الفعلي وتكامل واجهة برمجة التطبيقات وميزات تخصيص المستخدم مثل قائمة الرغبات والمفضلات وقوائم المشاهدة. \nالأمثل للأداء وتصميم واجهة المستخدم النظيفة.",
+  "Featured Projects": "مشاريع مميزة",
+  "Featured Projects descrabtion": "مجموعة مختارة من المشاريع التي تثبت خبرتي في الواجهة الأمامية\n          \nالتطوير وتكامل واجهة برمجة التطبيقات (API) وبناء الويب التفاعلي\n          \nالتطبيقات.",
+  "Lets build beautiful fast and intuitive web interfaces together powered by modern front-end technologies": "لنقم معًا ببناء واجهات ويب جميلة وسريعة وسهلة الاستخدام، مدعومة بتقنيات الواجهة الأمامية الحديثة.",
+  "Location": "موقعي",
+  "Available for Remote Work": "متاح للعمل عن بعد",
+  "Phone": "رقمي",
+  "Email": "بريدي إلالكتروني",
+  "Send a Message": "أرسل رسالة",
+  "send message": "أرسل رسالة",
+  "your name": "اسمك",
+  "Your email": "البريد الإلكتروني الخاص بك",
+  "subject": "موضوع",
+  "your message": "رسالتك"
 }
