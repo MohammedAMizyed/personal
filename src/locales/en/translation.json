@@ -61,5 +61,11 @@
   "your name": "Your Name",
   "Your email": "Your Email",
   "subject": "Subject",
-  "your message": "Your Message"
+  "your message": "Your Message",
+  "must be": "The subject shouldn't be empty.",
+  "unvalidE": "Unvalid Email",
+  "The name must be at least 3 letters long": "The name must be at least 3 letters long.",
+  "The password must be at least 6 characters long": "The password must be at least 6 characters long.",
+  "The message was sent successfully": "The message was sent successfully",
+  "Failed to send  Please try again later": "Failed to send ❌ Please try again later"
 }

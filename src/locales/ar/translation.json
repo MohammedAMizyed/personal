@@ -60,5 +60,11 @@
   "your name": "اسمك",
   "Your email": "البريد الإلكتروني الخاص بك",
   "subject": "موضوع",
-  "your message": "رسالتك"
+  "your message": "رسالتك",
+  "must be": "لا ينبغي أن يكون الموضوع فارغا.",
+  "unvalidE": "بريد إلكتروني غير صالح",
+  "The name must be at least 3 letters long": "يجب أن يكون الاسم مكونًا من 3 أحرف على الأقل.",
+  "The password must be at least 6 characters long": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل.",
+  "The message was sent successfully": "تم إرسال الرسالة بنجاح ",
+  "Failed to send  Please try again later": "فشل الإرسال ❌ يرجى المحاولة مرة أخرى لاحقًا"
 }

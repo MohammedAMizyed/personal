@@ -4,7 +4,7 @@ import Landing from "../components/Landing"
 import TechnicalSkills from "@/components/TechnicalSkills"
 import ProfessionalExperience from "@/components/ProfessionalExperience"
 import FeaturedProjects from "@/components/FeaturedProjects"
-import Contact from "@/components/contact"
+import Contact from "@/components/Contact"
 
 export default function Home() {
   return (
