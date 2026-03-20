@@ -48,7 +48,7 @@ export default function Header({ refs }: HeaderProps) {
           }}
           className="text-[20px] text-[#717182] cursor-pointer hover:text-[black] duration-200"
         >
-          Mohammed Dev
+          Mohammed Developer
         </h1>
         <div className=" flex justify-center items-center gap-3">
           {links.map((link) => {
