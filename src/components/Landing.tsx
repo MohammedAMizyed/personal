@@ -25,7 +25,7 @@ export default function Landing() {
           >
             {t("Hello I")}
 
-            <span className="block animate-pulse">Mohammed Developer</span>
+            <span className="block animate-pulse">Mohammed Dev</span>
           </h1>
           <h2
             data-aos="fade-up"
