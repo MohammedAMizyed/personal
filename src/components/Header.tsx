@@ -19,6 +19,7 @@ import {
 interface HeaderProps {
   refs: { [key: string]: React.RefObject<HTMLDivElement | null> }
 }
+// .
 export default function Header({ refs }: HeaderProps) {
   const handleScroll = (title: string) => {
     const target = refs[title]?.current
