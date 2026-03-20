@@ -37,8 +37,16 @@ import {
   FaCloud,
   FaEnvira,
 } from "react-icons/fa"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 import { TbBrandReact } from "react-icons/tb"
+import Inter from "./Inter"
 export default function TechnicalSkills() {
+  useEffect(() => {
+    AOS.init({ duration: 800 })
+  }, [])
+
   const { t } = useTranslation()
   const skillsData = [
     {
@@ -162,19 +170,20 @@ export default function TechnicalSkills() {
     },
   ]
   return (
-    <div className="container mt-10">
-      <div className="text-center">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-black mb-5">
-          {t("Technical Skills")}
-        </h1>
-        <h2 className="sm:text-2xl max-w-[750px] m-auto text-[#717182]">
-          {t("Comprehensive expertise across modern front-end development")}
-        </h2>
-      </div>
+    <div className="container mt-10 ">
+      <Inter
+        title={t("Technical Skills")}
+        description={t(
+          "Comprehensive expertise across modern front-end development",
+        )}
+      />
       <div className="my-10 flex justify-center flex-wrap items-stretch gap-5">
         {skillsData.map((item) => {
           return (
-            <div className="lg:basis-[30%] basis-[100%] bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow">
+            <div
+              data-aos="fade-up"
+              className="lg:basis-[30%] basis-[100%] bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow"
+            >
               <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white border-b pb-2">
                 {item.title}
               </h3>

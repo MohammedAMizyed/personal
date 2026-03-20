@@ -7,7 +7,20 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-export default function Header() {
+interface HeaderProps {
+  refs: { [key: string]: React.RefObject<HTMLDivElement | null> }
+}
+export default function Header({ refs }: HeaderProps) {
+  const handleScroll = (title: string) => {
+    const target = refs[title]?.current
+    if (target) {
+      const yOffset = -74 // ارتفاع الـ header بالـ px
+      const y =
+        target.getBoundingClientRect().top + window.pageYOffset + yOffset
+      window.scrollTo({ top: y, behavior: "smooth" })
+    }
+  }
+
   const { t, i18n } = useTranslation()
 
   const links = [
@@ -32,21 +45,7 @@ export default function Header() {
               >
                 <div
                   onClick={() => {
-                    window.scrollTo({
-                      top:
-                        link.title == "Home"
-                          ? 0
-                          : link.title == "Skills"
-                            ? 750
-                            : link.title == "Experience"
-                              ? 1500
-                              : link.title == "Projects"
-                                ? 2250
-                                : link.title == "Contact"
-                                  ? 3000
-                                  : 0,
-                      behavior: "smooth",
-                    })
+                    handleScroll(link.title)
                   }}
                 >
                   {link.title}
