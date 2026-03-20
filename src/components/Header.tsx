@@ -2,6 +2,15 @@ import { PiTranslate } from "react-icons/pi"
 import { RiUserStarLine } from "react-icons/ri"
 import { useTranslation } from "react-i18next"
 import { cn } from "@/lib/utils"
+import { BsList } from "react-icons/bs"
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import {
   Tooltip,
   TooltipContent,
@@ -58,8 +67,6 @@ export default function Header({ refs }: HeaderProps) {
               </div>
             )
           })}
-          <div className="block sm:hidden ">list</div>
-
           <Tooltip>
             <TooltipTrigger>
               <div
@@ -68,7 +75,10 @@ export default function Header({ refs }: HeaderProps) {
                   i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar")
                 }
               >
-                <PiTranslate className="text-3xl cursor-pointer hover:text-[#717182] duration-200" />
+                <PiTranslate
+                  size={26}
+                  className="text-3xl cursor-pointer hover:text-[#717182] duration-200"
+                />
               </div>
             </TooltipTrigger>
             <TooltipContent>
@@ -78,8 +88,44 @@ export default function Header({ refs }: HeaderProps) {
               </p>
             </TooltipContent>
           </Tooltip>
+          <div
+            className={cn(
+              i18n.language === "ar" ? "hidden" : "block",
+              "  sm:hidden ",
+            )}
+          >
+            <Sheet>
+              <SheetTrigger>
+                <BsList size={26} />
+              </SheetTrigger>
+              <SheetContent className="w-[50%]!">
+                <SheetHeader>
+                  <SheetTitle className="mt-5">
+                    {links.map((link) => {
+                      return (
+                        <div
+                          onClick={() => {
+                            handleScroll(link.title)
+                          }}
+                          className="text-center p-2 text-xl font-medium"
+                          key={link.id}
+                        >
+                          {link.title}
+                        </div>
+                      )
+                    })}
+                  </SheetTitle>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
-        <div className={cn(i18n.language === "en" ? "hidden" : "block")}>
+        <div
+          className={cn(
+            i18n.language === "en" ? "hidden" : "flex",
+            " justify-center items-center gap-2",
+          )}
+        >
           <Tooltip>
             <TooltipTrigger>
               <div
@@ -97,6 +143,32 @@ export default function Header({ refs }: HeaderProps) {
               </p>{" "}
             </TooltipContent>
           </Tooltip>
+          <div className=" block sm:hidden ">
+            <Sheet>
+              <SheetTrigger>
+                <BsList size={26} />
+              </SheetTrigger>
+              <SheetContent className="w-[50%]!">
+                <SheetHeader>
+                  <SheetTitle className="mt-5">
+                    {links.map((link) => {
+                      return (
+                        <div
+                          onClick={() => {
+                            handleScroll(link.title)
+                          }}
+                          className="text-center p-2 text-xl font-medium"
+                          key={link.id}
+                        >
+                          {link.title}
+                        </div>
+                      )
+                    })}
+                  </SheetTitle>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
 
         <div
