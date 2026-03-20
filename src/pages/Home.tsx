@@ -18,7 +18,6 @@ export default function Home() {
   return (
     <div>
       <GravityStarsBackground className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl" />
-
       <Header
         refs={{
           Home: homeRef,
@@ -28,7 +27,6 @@ export default function Home() {
           Contact: contactRef,
         }}
       />
-
       <div ref={homeRef} className="sm:mt-[175px] lg:h-[calc(100vh-64px)]">
         <Landing />
       </div>

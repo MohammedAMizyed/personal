@@ -1,10 +1,12 @@
-'use client';
+"use client"
 
-import * as React from 'react';
-import { motion, type HTMLMotionProps, type Variant } from 'motion/react';
+import { motion, type HTMLMotionProps, type Variant } from "motion/react"
 
-import { getStrictContext } from '@/lib/get-strict-context';
-import { Slot, type WithAsChild } from '@/components/animate-ui/primitives/animate/slot';
+import { getStrictContext } from "@/lib/get-strict-context"
+import {
+  Slot,
+  type WithAsChild,
+} from "@/components/animate-ui/primitives/animate/slot"
 
 const buildVariant = ({
   opacity,
@@ -13,47 +15,47 @@ const buildVariant = ({
   isVertical,
   rotateAxis,
 }: {
-  opacity: number;
-  rotation: number;
-  offset: string | null;
-  isVertical: boolean;
-  rotateAxis: string;
+  opacity: number
+  rotation: number
+  offset: string | null
+  isVertical: boolean
+  rotateAxis: string
 }): Variant => ({
   opacity,
   [rotateAxis]: rotation,
   ...(isVertical && offset !== null ? { y: offset } : {}),
   ...(!isVertical && offset !== null ? { x: offset } : {}),
-});
+})
 
-type FlipDirection = 'top' | 'bottom' | 'left' | 'right';
+type FlipDirection = "top" | "bottom" | "left" | "right"
 
 type FlipButtonContextType = {
-  from: FlipDirection;
-  isVertical: boolean;
-  rotateAxis: string;
-};
+  from: FlipDirection
+  isVertical: boolean
+  rotateAxis: string
+}
 
 const [FlipButtonProvider, useFlipButton] =
-  getStrictContext<FlipButtonContextType>('FlipButtonContext');
+  getStrictContext<FlipButtonContextType>("FlipButtonContext")
 
 type FlipButtonProps = WithAsChild<
-  HTMLMotionProps<'button'> & {
-    from?: FlipDirection;
-    tapScale?: number;
+  HTMLMotionProps<"button"> & {
+    from?: FlipDirection
+    tapScale?: number
   }
->;
+>
 
 function FlipButton({
-  from = 'top',
+  from = "top",
   tapScale = 0.95,
   asChild = false,
   style,
   ...props
 }: FlipButtonProps) {
-  const isVertical = from === 'top' || from === 'bottom';
-  const rotateAxis = isVertical ? 'rotateX' : 'rotateY';
+  const isVertical = from === "top" || from === "bottom"
+  const rotateAxis = isVertical ? "rotateX" : "rotateY"
 
-  const Component = asChild ? Slot : motion.button;
+  const Component = asChild ? Slot : motion.button
 
   return (
     <FlipButtonProvider value={{ from, isVertical, rotateAxis }}>
@@ -63,34 +65,34 @@ function FlipButton({
         whileHover="hover"
         whileTap={{ scale: tapScale }}
         style={{
-          display: 'inline-grid',
-          placeItems: 'center',
-          perspective: '1000px',
+          display: "inline-grid",
+          placeItems: "center",
+          perspective: "1000px",
           ...style,
         }}
         {...props}
       />
     </FlipButtonProvider>
-  );
+  )
 }
 
-type FlipButtonFaceProps = WithAsChild<HTMLMotionProps<'span'>>;
+type FlipButtonFaceProps = WithAsChild<HTMLMotionProps<"span">>
 
 function FlipButtonFront({
-  transition = { type: 'spring', stiffness: 280, damping: 20 },
+  transition = { type: "spring", stiffness: 280, damping: 20 },
   asChild = false,
   style,
   ...props
 }: FlipButtonFaceProps) {
-  const { from, isVertical, rotateAxis } = useFlipButton();
+  const { from, isVertical, rotateAxis } = useFlipButton()
 
-  const frontOffset = from === 'top' || from === 'left' ? '50%' : '-50%';
+  const frontOffset = from === "top" || from === "left" ? "50%" : "-50%"
 
   const frontVariants = {
     initial: buildVariant({
       opacity: 1,
       rotation: 0,
-      offset: '0%',
+      offset: "0%",
       isVertical,
       rotateAxis,
     }),
@@ -101,9 +103,9 @@ function FlipButtonFront({
       isVertical,
       rotateAxis,
     }),
-  };
+  }
 
-  const Component = asChild ? Slot : motion.span;
+  const Component = asChild ? Slot : motion.span
 
   return (
     <Component
@@ -111,26 +113,26 @@ function FlipButtonFront({
       variants={frontVariants}
       transition={transition}
       style={{
-        gridArea: '1 / 1',
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        gridArea: "1 / 1",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
         ...style,
       }}
       {...props}
     />
-  );
+  )
 }
 
 function FlipButtonBack({
-  transition = { type: 'spring', stiffness: 280, damping: 20 },
+  transition = { type: "spring", stiffness: 280, damping: 20 },
   asChild = false,
   style,
   ...props
 }: FlipButtonFaceProps) {
-  const { from, isVertical, rotateAxis } = useFlipButton();
+  const { from, isVertical, rotateAxis } = useFlipButton()
 
-  const backOffset = from === 'top' || from === 'left' ? '-50%' : '50%';
+  const backOffset = from === "top" || from === "left" ? "-50%" : "50%"
 
   const backVariants = {
     initial: buildVariant({
@@ -143,13 +145,13 @@ function FlipButtonBack({
     hover: buildVariant({
       opacity: 1,
       rotation: 0,
-      offset: '0%',
+      offset: "0%",
       isVertical,
       rotateAxis,
     }),
-  };
+  }
 
-  const Component = asChild ? Slot : motion.span;
+  const Component = asChild ? Slot : motion.span
 
   return (
     <Component
@@ -157,25 +159,26 @@ function FlipButtonBack({
       variants={backVariants}
       transition={transition}
       style={{
-        gridArea: '1 / 1',
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        gridArea: "1 / 1",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
         ...style,
       }}
       {...props}
     />
-  );
+  )
 }
 
 export {
   FlipButton,
   FlipButtonFront,
   FlipButtonBack,
+  // eslint-disable-next-line react-refresh/only-export-components
   useFlipButton,
   type FlipButtonProps,
   type FlipButtonFaceProps as FlipButtonFrontProps,
   type FlipButtonFaceProps as FlipButtonBackProps,
   type FlipDirection,
   type FlipButtonContextType,
-};
+}

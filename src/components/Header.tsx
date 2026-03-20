@@ -33,7 +33,12 @@ export default function Header({ refs }: HeaderProps) {
   return (
     <div className="container fixed left-[50%] -translate-x-1/2 top-0 z-20 bg-wight backdrop-blur-lg border-t-1 border-b-[1px] border-[#0000001a]">
       <div className=" relative z-10 h-16 mt-2  flex justify-between items-center">
-        <h1 className="text-[20px] text-[#717182] cursor-pointer hover:text-[black] duration-200">
+        <h1
+          onClick={() => {
+            scrollTo({ top: 0, behavior: "smooth" })
+          }}
+          className="text-[20px] text-[#717182] cursor-pointer hover:text-[black] duration-200"
+        >
           Mohammed Developer
         </h1>
         <div className=" flex justify-center items-center gap-3">

@@ -23,7 +23,7 @@ export default function ExperienceCard({ data }: Props) {
         <div
           data-aos="fade-up"
           key={index}
-          className="bg-white hover:scale-[1.02] transition-all duration-200 ease-in-out duration-200 dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition-all "
+          className="bg-white  transition-all duration-200 ease-in-out  dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg  "
         >
           <div className="flex justify-between flex-wrap gap-4 mb-4">
             <div>

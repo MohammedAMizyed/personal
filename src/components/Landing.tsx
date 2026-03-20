@@ -47,7 +47,10 @@ export default function Landing() {
           <div className="flex gap-5 justify-center sm:justify-start items-center my-5">
             <Button
               data-aos="fade-up"
-              className="cursor-pointer p-5 sm:w-fit w-[50%]   hover:bg-[#000000cb]"
+              className="cursor-pointer p-5 sm:w-fit w-[50%] hover:bg-[#000000cb]"
+              onClick={() =>
+                window.open("https://wa.me/972599634192", "_blank")
+              }
             >
               {t("Contact Me")}
             </Button>
@@ -57,22 +60,24 @@ export default function Landing() {
               className="cursor-pointer sm:w-fit w-[50%] p-5"
               variant={"outline"}
             >
-              {t("View My Work")}
+              <a
+                href="https://github.com/MohammedAMizyed/Clothes_App"
+                target="_blank"
+              >
+                {t("View My Work")}
+              </a>
             </Button>
           </div>
           <div
             data-aos="fade-up"
             className="flex items-center sm:justify-start justify-center gap-5 mt-5"
           >
-            <div className="rounded-[50%] cursor-pointer border-[1px] border-[#717182] p-3">
-              <a
-                href="https://www.facebook.com/MohammedAMizyed1 "
-                target="_blank"
-              >
+            <div className="rounded-[50%] cursor-pointer hover:scale-[1.1] border-[1px] border-[#717182] hover:shadow-2xl dark:bg-gray-800 hover:shadow-lg duration-200 p-3  transition-all">
+              <a href="https://github.com/MohammedAMizyed" target="_blank">
                 <FiGithub />
               </a>
             </div>
-            <div className="rounded-[50%] cursor-pointer border-[1px] border-[#717182] p-3">
+            <div className="rounded-[50%] cursor-pointer hover:scale-[1.1] border-[1px] border-[#717182] hover:shadow-2xl dark:bg-gray-800 hover:shadow-lg duration-200 p-3  transition-all">
               <a
                 href="https://www.facebook.com/MohammedAMizyed1 "
                 target="_blank"
@@ -80,10 +85,11 @@ export default function Landing() {
                 <FaFacebookF />
               </a>
             </div>
-            <div className="rounded-[50%] cursor-pointer border-[1px] border-[#717182] p-3">
+            <div className="rounded-[50%] cursor-pointer hover:scale-[1.1] border-[1px] border-[#717182] hover:shadow-2xl dark:bg-gray-800 hover:shadow-lg duration-200 p-3  transition-all">
               <a
-                href="https://www.facebook.com/MohammedAMizyed1 "
+                href="https://mail.google.com/mail/?view=cm&to=mohammedamizyed2006@gmail.com"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <MdOutgoingMail />
               </a>
