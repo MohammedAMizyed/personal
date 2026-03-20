@@ -28,9 +28,7 @@ export default function Contact() {
     name: z.string().min(3, t("The name must be at least 3 letters long")),
     email: z.string().email(t("unvalidE")),
     subject: z.string().min(3, t("must be")),
-    message: z
-      .string()
-      .min(6, t("The password must be at least 6 characters long")),
+    message: z.string().min(6, t("the Message")),
   })
   type FormData = z.infer<typeof formSchema>
 
